@@ -10,17 +10,17 @@ install application
 
 apt install need run with root
 ```
-# sudo apt update
-# apt install lsb-release
-# apt-get clean all
-# lsb_release -cs
+~# sudo apt update
+~# apt install lsb-release
+~# apt-get clean all
+~# lsb_release -cs
 buster
-# apt-get install gnupg
-# exit
-$ wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
-$ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-$ sudo apt update && sudo apt install vault
-$ vault -h
+~# apt-get install gnupg
+~# exit
+~$ wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+~$ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+~$ sudo apt update && sudo apt install vault
+~$ vault -h
 Usage: vault <command> [args]
 
 Common commands:
@@ -51,5 +51,5 @@ Other commands:
     ssh                  Initiate an SSH session
     token                Interact with tokens
     version-history      Prints the version history of the target Vault server
-$
+~$
 ```
